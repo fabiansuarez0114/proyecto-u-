@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fuente y colores base */
+body {
+  @apply bg-gray-50 text-gray-800 font-sans leading-relaxed;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezados */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold text-gray-900;
+  margin-bottom: 0.5rem;
+}
+
+/* Enlaces */
+a {
+  @apply text-blue-600 hover:text-blue-800 transition-colors;
+  text-decoration: none;
+}
+
+/* Botones */
+button {
+  @apply font-medium rounded-md shadow-sm transition-all;
+}
+
+/* Inputs y selects */
+input, select, textarea {
+  @apply border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition;
+}
+
+/* Tarjetas y contenedores */
+.card {
+  @apply bg-white rounded-xl shadow-md p-6 transition transform hover:scale-105 hover:shadow-xl;
+}
+
+/* Footer */
+footer {
+  @apply bg-gray-900 text-white py-6 mt-10;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
